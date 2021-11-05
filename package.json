@@ -1,0 +1,42 @@
+{
+    "name": "canvas-click-wrapper",
+    "version": "0.1.0",
+    "description": "Light wrapper that handles touch and mouse clicks as coordinates on the canvas",
+    "main": "dist/canvas-click.min.js",
+    "types": "dist/canvas-click.d.ts",
+    "scripts": {
+        "clean": "rimraf ./dist",
+        "build:js": "rollup -c rollup.config.js",
+        "build:minjs": "terser ./dist/canvas-click.js --compress --mangle > ./dist/canvas-click.min.js",
+        "build": "npm run clean && npm run build:js -s && npm run build:minjs"
+    },
+    "funding": "https://www.patreon.com/PresentKim",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/PresentKim/canvas-click-wrapper-wrapper.git"
+    },
+    "keywords": [
+        "html",
+        "browser",
+        "canvas",
+        "wrapper",
+        "canvas-click-wrapper",
+        "typescript"
+    ],
+    "author": "PresentKim <debe3721@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/PresentKim/canvas-click-wrapper/issues"
+    },
+    "homepage": "https://github.com/PresentKim/canvas-click-wrapper",
+    "devDependencies": {
+        "@rollup/plugin-typescript": "^8.3.0",
+        "core-js": "^3.19.0",
+        "rimraf": "^3.0.2",
+        "rollup": "^2.59.0",
+        "terser": "^5.9.0",
+        "tslib": "^2.3.1",
+        "typescript": "^4.4.4"
+    },
+    "packageManager": "yarn@3.1.0"
+}
