@@ -6,7 +6,8 @@
         "declarationDir": "./",
         "moduleResolution": "node",
         "esModuleInterop": true,
-        "strict": true
+        "strict": true,
+        "lib": ["DOM", "ScriptHost", "es2019", "ES6"]
     },
     "exclude": ["node_modules", "dist"]
 }
