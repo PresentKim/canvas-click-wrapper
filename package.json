@@ -1,6 +1,6 @@
 {
     "name": "canvas-click-wrapper",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "description": "Light wrapper that handles touch and mouse clicks as coordinates on the canvas",
     "main": "dist/canvas-click.min.js",
     "types": "dist/canvas-click.d.ts",
